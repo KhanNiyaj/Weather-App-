@@ -107,31 +107,36 @@ body {
     font-size: 28px;
     margin: -6px;
 }
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
     .card {
-        padding: 30px 20px;
+        width: 95%;
+        padding: 30px 15px;
         margin: 50px auto 0;
         border-radius: 15px;
     }
 
     .search {
-        flex-direction: row; /* Ensure button and input stay in one row */
+        display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 10px;
+        width: 100%;
     }
 
     .search input {
-        margin-right: 0;
+        flex: 1;
+        min-width: 0; /* Prevents overflow */
         font-size: 16px;
         height: 50px;
         border-radius: 15px;
-        flex: 1;
+        padding: 10px 15px;
     }
 
     .search button {
+        flex-shrink: 0;
         width: 50px;
         height: 50px;
-        flex-shrink: 0;
+        border-radius: 50%;
     }
 
     .weather-icon {
@@ -153,11 +158,6 @@ body {
         gap: 30px;
         padding: 0;
         margin-top: 30px;
-    }
-
-    .col {
-        flex-direction: row;
-        justify-content: center;
     }
 
     .col img {
