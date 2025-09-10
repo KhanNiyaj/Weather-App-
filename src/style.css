@@ -107,7 +107,7 @@ body {
     font-size: 28px;
     margin: -6px;
 }
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 600px) {
     .card {
         width: 95%;
         padding: 30px 15px;
@@ -158,6 +158,10 @@ body {
         gap: 30px;
         padding: 0;
         margin-top: 30px;
+    }
+
+    .col {
+        justify-content: center;
     }
 
     .col img {
